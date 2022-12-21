@@ -1,6 +1,16 @@
 # ES6 Promises
 
-This project contains tasks done while learning to use Promises in ECMAScript 2015 (ES6).
+In JavaScript, a Promise is an object that represents the result of an asynchronous operation. It allows you to write asynchronous code in a way that looks and feels like synchronous code.
+
+Promises have three states:
+
+Pending: The initial state of a Promise, representing that the asynchronous operation has not yet completed.
+
+Fulfilled: The state of a Promise representing that the asynchronous operation has completed successfully.
+
+Rejected: The state of a Promise representing that the asynchronous operation has failed.
+
+A Promise can be created using the Promise constructor, which takes a function called the "executor" as an argument. The executor function has two arguments, resolve and reject, which are used to change the state of the Promise.
 
 ## Tasks
 
@@ -69,18 +79,6 @@ This project contains tasks done while learning to use Promises in ECMAScript 20
 
 + [x] 10. **Await / Async**<br/>[100-await.js](100-await.js) contains a script that meets the following requirements.
   + Import `uploadPhoto` and `createUser` from [utils.js](utils.js).
-  + Export an async function named `asyncUploadUser` that will call the two functions imported above and return an object with the following format:
-    ```js
-    {
-      photo: response_from_uploadPhoto_function,
-      user: response_from_createUser_function,
-    }
-    ```
-  + Import `uploadPhoto` and `createUser` from [utils.js](utils.js).
-  + If one of the async function fails, return an empty object as shown below:
-    ```js
-    {
-      photo: null,
-      user: null,
-    }
-    ```
+  + Export an async function named `asyncUploadUser` that will call the two functions imported
+
+
